@@ -1,0 +1,52 @@
+ <html>
+ <!–- form01.html -->
+
+ <head>
+  <title>Página Olá / Até logo</title>
+  <meta http-equiv="Content-Type"  
+   content="text/html; charset=utf-8">
+   <script>
+     function conta_substr(str,substr)
+     {
+	var cont = 0;
+	var pos =0;
+
+	while(true){
+	   pos= str.indexOf(substr,pos)
+	   if(pos>=0){
+		cont++;
+		pos++;
+	   }
+           else break;
+	}
+	return cont;
+     }
+   </script>
+ </head>
+
+  <script type="text/javascript">
+    var data =prompt("Digite a data de seu nascimento no formato dd/mm/aaaa");
+    arrData=data.split('/');
+    var horario =prompt("Digite o horario de seu nascimento no formato hh:mm:ss");
+    arrHorario=horario.split(':');
+    data_nascimento =  new Date(arrData[2],arrData[1],arrData[0],arrHorario[0],arrHorario[1],arrHorario[2], 0);
+    data_atual= new Date();
+     secs = Math.round((data_atual-data_nascimento)/1000);
+    
+    years = Math.floor(secs / 31536000);
+    secs -= years*31536000;//total de segundos em um ano de 365
+
+    days = Math.floor(secs / 86400);
+    secs -= days*86400;
+    hours = Math.floor(secs / 3600);
+    secs -= hours*3600;
+    minutes = Math.floor(secs / 60);
+    secs -= minutes*60;
+    document.write("Sua idade é :"+years+"anos"+days + " dias, " + hours + " horas, " +
+         minutes + " minutos, e " + secs + " segundos.");
+
+
+    
+ 	
+  </script>
+</html>

@@ -1,0 +1,28 @@
+ <html>
+
+
+ <head>
+  <title>Página Olá / Até logo</title>
+  <meta http-equiv="Content-Type"  
+   content="text/html; charset=utf-8">
+   <script>
+   </script>
+ </head>
+
+  <script type="text/javascript">
+	lista= new Array();
+	var pos_maior=0;
+	for(i=0;i<5;i++){
+		var nome=prompt("Digite o  nome");
+		var altura=parseFloat(prompt("Digite a altura"));
+		lista.push(new Array(nome,altura));
+	}
+	for(i=0;i<5;i++){
+		if(lista[i][1]>lista[pos_maior][1]){
+			pos_maior=i;
+		}
+	}
+	document.write("A pessoa mais alta é:"+lista[pos_maior][0]+ " com altura : "+lista[pos_maior][1]);
+	
+  </script>
+</html>

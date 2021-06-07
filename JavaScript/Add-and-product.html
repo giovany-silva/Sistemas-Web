@@ -1,0 +1,26 @@
+<html>
+ <!–- form01.html -->
+
+ <head>
+  <title>Página Olá / Até logo</title>
+  <meta http-equiv="Content-Type"  
+   content="text/html; charset=utf-8">
+ </head>
+
+  <script type="text/javascript">
+    var arr = new Array(5);
+    for(i=0;i<arr.length;i++){
+	arr[i]=prompt("Digite o número","");
+    }
+    var soma = arr[0];
+    for(i=1;i<arr.length;i++){
+	soma+=parseInt(arr[i]);
+    }
+    var mult = arr[0];
+    for(i=1;i<arr.length;i++){
+	mult*=arr[i];
+    }
+    document.Write("Valor da soma : "+soma+"<br>");
+    document.Write("Valor do produto : "+mult+"<br>");	
+  </script>
+</html>

@@ -1,0 +1,35 @@
+ <html>
+
+
+ <head>
+  <title>Página Olá / Até logo</title>
+  <meta http-equiv="Content-Type"  
+   content="text/html; charset=utf-8">
+   <script>
+   </script>
+ </head>
+
+  <script type="text/javascript">
+	var salario_atual=prompt("Digite o salario atual");
+	var novo_salario;
+	if(salario_atual<=280){
+		novo_salario=salario_atual*1.2;
+		document.write("Salario anterior "+salario_atual+ " percentual : 20% "+"valor aumento :"+0.2*salario_atual+" Novo salario "+novo_salario);		
+	}
+	else if(salario_atual>280 &&salario_atual<=700){
+		novo_salario=salario_atual*1.15;		
+		document.write("Salario anterior "+salario_atual+ " percentual : 15% "+"valor aumento :"+0.15*salario_atual+" Novo salario "+novo_salario);		
+		
+	}
+	else if(salario_atual>700&&salario_atual<=1500){
+		novo_salario=salario_atual*1.1;		
+		document.write("Salario anterior "+salario_atual+ " percentual : 10% "+"valor aumento :"+0.1*salario_atual+" Novo salario "+novo_salario);		
+	
+	}
+	else {
+		novo_salario=salario_atual*1.05;		
+		document.write("Salario anterior "+salario_atual+ " percentual : 5% "+"valor aumento :"+0.05*salario_atual+" Novo salario "+novo_salario);		
+	}
+	
+  </script>
+</html>

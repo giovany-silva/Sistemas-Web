@@ -1,0 +1,32 @@
+ <html>
+
+
+ <head>
+  <title>Página Olá / Até logo</title>
+  <meta http-equiv="Content-Type"  
+   content="text/html; charset=utf-8">
+   <script>
+   </script>
+ </head>
+
+  <script type="text/javascript">
+      var meses = [
+      "Janeiro",
+      "Fevereiro",
+      "Março",
+      "Abril",
+      "Maio",
+      "Junho",
+      "Julho",
+      "Agosto",
+      "Setembro",
+      "Outubro",
+      "Novembro",
+      "Dezembro"
+    ];
+	data= prompt("Digite uma data no formato dd/mm/aaaa:");
+	nova_data = data.split("/");
+	document.write(nova_data[0]+" de "+meses[parseInt(nova_data[1])-1]+" de "+nova_data[2]);
+	
+  </script>
+</html>

@@ -1,0 +1,23 @@
+ <html>
+
+
+ <head>
+  <title>Página Olá / Até logo</title>
+  <meta http-equiv="Content-Type"  
+   content="text/html; charset=utf-8">
+   <script>
+   </script>
+ </head>
+
+  <script type="text/javascript">
+
+	var lista= new Array(),numero,valor=0;
+	while((numero=parseInt(prompt("Digite o número")))!=0){
+		lista.push(numero);
+	}
+	for(i=0;i<lista.length;i++){
+		valor+=lista[i];
+	}
+	document.write(valor/lista.length);
+  </script>
+</html>

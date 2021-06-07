@@ -1,0 +1,50 @@
+ <html>
+ <!–- form01.html -->
+
+ <head>
+  <title>Página Olá / Até logo</title>
+  <meta http-equiv="Content-Type"  
+   content="text/html; charset=utf-8">
+   <script>
+     function conta_substr(str,substr)
+     {
+	var cont = 0;
+	var pos =0;
+
+	while(true){
+	   pos= str.indexOf(substr,pos)
+	   if(pos>=0){
+		cont++;
+		pos++;
+	   }
+           else break;
+	}
+	return cont;
+     }
+   </script>
+ </head>
+
+  <script type="text/javascript">
+    var str =prompt("Digite a String","");
+    var substr = prompt("Digite a substring");
+    var quant = conta_substr(str,substr);
+    document.write("A substring"+ substr+" aparece "+quant+"vezes na string"+str);
+    
+ 	
+  </script>
+</html>
+
+
+function maior_palavra(str){
+		 
+		  for(i = 0;i<str.length-1;i++){
+			 if(str.charAt(i)==' '){
+			  	if(i!=0 and str.substring(first_letter,i-1).length>biggest_word.length){
+					biggest_word = str.substring(first_letter,i);
+			  		first_letter = i+1;
+
+				}	
+			 }
+		  }
+		  return biggest_word;
+		}

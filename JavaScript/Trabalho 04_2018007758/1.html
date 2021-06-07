@@ -1,0 +1,28 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Encontrar maior palavra</title>
+	<script type="text/javascript">
+   	 function maior_palavra(str){
+		var first_letter=0;
+		var res= str.split(" ");
+		var biggest_word="";
+		for(i=0;i<res.length;i++){
+			var word=res[i];
+			if(word.length>biggest_word.length){
+				biggest_word=res[i];
+			}
+		}
+	        return biggest_word;
+      	 }
+	  
+  	</script>
+</head>
+<body>
+	<script type="text/javascript">
+	var str = prompt("Digite a String");
+	document.write("A maior palavra na string "+str+" é :"+maior_palavra(str));
+	
+	</script>
+</body>
+</html>
