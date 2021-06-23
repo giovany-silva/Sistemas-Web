@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head></head>
+<body>
+    <h1 class="text-center title-1"> Lista de Cidades </h1>
+    <ul><b>Nome cidade  Temperatura </b>	
+	<% cidadelist.forEach(function(cidade){ %>
+		<li><a><%=cidade.cidade %>     <%=    cidade.temp %></a></li>	
+	<%})%>
+    </ul>
+</body>
+</html>
