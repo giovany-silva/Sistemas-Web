@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Files to download</title>
+<link rel="stylesheet" href="css/themes/darkly.min.css" title="Grundlayout">
+</head>
+<body>
+<div class="container">
+<header><h1>Files to download</h1></header>
+<main>
+<table class="table table-bordered">
+<tr>
+<th>ID</th>
+<th>File name</th>
+<th>File size</th>
+<th>Action</th>
+</tr>
+<tr>
+<td>65</td> 
+<td><footer> <a href=" 'file:///C:/xampp/htdocs/WEB/principal/arquivos/'".$row['nome']. target="_blank">Qt5WebChannel.dll</a></footer>
+ </td>
+<td>105984 Byte</td>
+<td class="text-center"><a href=""../"."arquivos/".$nome." class="btn btn-primary" download="Qt5WebChannel.dll">Download</a></td>
+</tr>
+
+<tr>
+<td>68</td> 
+<td><footer> <a href=" 'file:///C:/xampp/htdocs/WEB/principal/arquivos/'".$row['nome']. target="_blank">Projeto_IA.pdf</a></footer>
+ </td>
+<td>139713 Byte</td>
+<td class="text-center"><a href=""../"."arquivos/".$nome." class="btn btn-primary" download="Projeto_IA.pdf">Download</a></td>
+</tr>
+
+</table>
+</main>
+<footer>Re-programmed by <a href="https://AlexHaack.de/" target="_blank">AlexHaack</a> (original at <a href="https://youtu.be/9iFw-jsGyyY" target="_blank">Files to Download with PHP MySQL</a> (youtu.be/9iFw-jsGyyY)</footer>
+</div>
+</body>
+</html>
