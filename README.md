@@ -1,2 +1,2 @@
 # Sistemas Web
- códigos e aplicacoes
+ This repository contains exercise resolutions proposed by the discipline of WEB Systems Development
